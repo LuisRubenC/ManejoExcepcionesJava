@@ -19,6 +19,17 @@ public class Validacion {
         System.out.print("Ingrese su correo electrónico: ");
         email = sc.nextLine();
 
+        try {
+            if (validarCorreo(email)) {
+                System.out.println("Correo válido.");
+            } else {
+                throw new Exception("Formato de correo inválido.");
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            return; 
+        }
+
         System.out.println("Ingrese su contraseña: ");
         contraseña = sc.nextLine();
 
@@ -34,6 +45,32 @@ public class Validacion {
     }
 
     
+    public static boolean validarCorreo(String correo) {
+
+        int arrobaIndex = correo.indexOf("@");
+        int ultimaArroba = correo.lastIndexOf("@");
+
+        if (arrobaIndex == -1 || arrobaIndex != ultimaArroba) {
+            return false; 
+        }
+
+        int puntoDespues = correo.indexOf(".", arrobaIndex);
+        if (puntoDespues == -1) {
+            return false;
+        }
+
+        if (correo.startsWith("@") || correo.endsWith("@") || 
+            correo.startsWith(".") || correo.endsWith(".")) {
+            return false;
+        }
+
+        if (correo.contains(" ")) {
+            return false;
+        }
+
+        return true;
+    }
+
 
 public static void ValidarContraseña(String contraseña) throws Exception {
     if (contraseña.length() < 12) {
