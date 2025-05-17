@@ -21,19 +21,19 @@ Este proyecto es una aplicación Java de consola que simula un formulario de reg
 ### Pruebas Obligatorias 
 - **Edad 150**
 
- - ` ![image](https://github.com/user-attachments/assets/3c6a0a88-fcb7-4925-bd57-ba8f4ab18879)
+ -  ![image](https://github.com/user-attachments/assets/3c6a0a88-fcb7-4925-bd57-ba8f4ab18879)
 
 - **Correo sin @**
 
- - ` ![image](https://github.com/user-attachments/assets/2379f825-043e-4dfd-a213-0d91c67c81e0)
+ -  ![image](https://github.com/user-attachments/assets/2379f825-043e-4dfd-a213-0d91c67c81e0)
 
 - **Contraseña abc123**
 
- - ` ![image](https://github.com/user-attachments/assets/5a9393e0-ba23-49ad-a029-4970c0ba16b8)
+ -  ![image](https://github.com/user-attachments/assets/5a9393e0-ba23-49ad-a029-4970c0ba16b8)
 
 - **Ejemplo de entrada adecuada**
 
- - ` ![image](https://github.com/user-attachments/assets/d6263c61-7749-4002-a9b8-024d68013c97)
+ -  ![image](https://github.com/user-attachments/assets/d6263c61-7749-4002-a9b8-024d68013c97)
 
 
 
